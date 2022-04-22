@@ -7,6 +7,7 @@ app.get("/", (request, response) => {
 });
 
 const MONGO_URL = process.env.MONGO_URL;
+
 app.use(express.json());
 
 app.post("/signup", async function (request, response) {
